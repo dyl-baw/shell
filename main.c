@@ -101,9 +101,7 @@ int main()
                     continue;
                 }
             }
-            if(chdir(args[1]) != 0) { // if chdir fails, error out.
-                perror("");
-            }
+            chdir(args[1]);
             continue;
         }
         if (strcmp(args[0], "exit") == 0) {
